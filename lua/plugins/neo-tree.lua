@@ -1,28 +1,12 @@
-local M = {}
-
-M.specs = {
-  { src = "https://github.com/nvim-neo-tree/neo-tree.nvim", version = "v3.x" },
-}
-
-function M.setup()
-  require("neo-tree").setup({
+require("neo-tree").setup({
+    close_if_last_window = true,
     filesystem = {
-      hijack_netrw_behavior = "open_current",
-      follow_current_file = {
-        enabled = true,
-      },
+        follow_current_file = {
+            enabled = true,
+        },
+        hijack_netrw_behavior = "open_default",
     },
     window = {
-      mappings = {
-        ["-"] = "close_window",
-      },
+        width = 32,
     },
-  })
-
-  vim.keymap.set("n", "-", "<cmd>Neotree toggle filesystem reveal left<cr>", {
-    desc = "Toggle Neo-tree",
-    silent = true,
-  })
-end
-
-return M
+})

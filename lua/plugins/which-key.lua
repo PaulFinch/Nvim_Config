@@ -1,11 +1,7 @@
-local M = {}
+local which_key = require("which-key")
 
-M.specs = {
-  { src = "https://github.com/folke/which-key.nvim" },
-}
-
-function M.setup()
-  require("which-key").setup({})
-end
-
-return M
+which_key.setup()
+which_key.add({
+    { "<leader>p", group = "Packages", icon = "󰏖 " },
+    { "<leader>s", group = "Search" },
+})

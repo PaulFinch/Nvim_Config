@@ -11,6 +11,7 @@ vim.o.autoindent = true
 vim.o.breakindent = true
 vim.o.number = true
 vim.o.relativenumber = false
+vim.o.signcolumn = "yes"
 vim.o.mouse = "a"
 vim.o.showmode = false
 vim.o.termguicolors = true

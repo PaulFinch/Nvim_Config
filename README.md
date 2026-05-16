@@ -1,5 +1,3 @@
-nvim 0.12
-
 - Options:
   - vim.g.mapleader = " "
   - vim.g.maplocalleader = " "
@@ -13,7 +11,7 @@ nvim 0.12
   - vim.o.breakindent = true
   - vim.o.number = true
   - vim.o.relativenumber = false
-  - vim.o.signcolumn = true
+  - vim.o.signcolumn = "yes"
   - vim.o.mouse = "a"
   - vim.o.showmode = false
   - vim.o.termguicolors = true
@@ -21,14 +19,13 @@ nvim 0.12
   - vim.o.clipboard = "unnamedplus"
 
 - Plugins (Managed by vim.pack):
-  - blink cmp (preset: super-tab and ghost_text)
   - telescope
-  - neo-tree (open and close with '-' key)
   - treesitter
-  - which-key
-  - noice
   - mini-statusline
   - gitsigns
+  - nui
+  - nvim-web-devicons
+  - plenary
 
 - Theme: monokai (machine)
 
@@ -44,19 +41,8 @@ nvim 0.12
   - yaml
   - regex
 
-- LSP (Managed by Mason):
-  - bashls
-  - clangd
-  - gopls
-  - jsonls
-  - marksman
-  - pyright
-  - rust_analyzer
-  - yamlls
-
 - Keymaps:
   - space: leader key
-  - '-' : open and close neo-tree
   - leader + sf : search files
   - leader + sg : search grep
   - leader + pu : package upgrade (vim.pack)

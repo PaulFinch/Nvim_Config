@@ -21,6 +21,7 @@
 - Plugins (Managed by vim.pack):
   - telescope
   - treesitter
+  - which-key
   - mini-statusline
   - gitsigns
   - plenary

@@ -2,6 +2,8 @@ vim.pack.add({
   { src = "https://github.com/nvim-lua/plenary.nvim" },
   { src = "https://github.com/nvim-tree/nvim-web-devicons" },
   { src = "https://github.com/MunifTanjim/nui.nvim" },
+  { src = "https://github.com/Saghen/blink.lib" },
+  { src = "https://github.com/Saghen/blink.cmp" }, 
   { src = "https://github.com/nvim-telescope/telescope.nvim" },
   { src = "https://github.com/folke/which-key.nvim" },
   { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
@@ -15,8 +17,9 @@ require("config.options")
 require("config.keymaps")
 
 require("plugins.colorscheme")
-require("plugins.telescope")
 require("plugins.which-key")
+require("plugins.blink")
+require("plugins.telescope")
 require("plugins.treesitter")
 require("plugins.neo-tree")
 require("plugins.statusline")

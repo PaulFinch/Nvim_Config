@@ -21,6 +21,7 @@
 ## Plugins (vim.pack)
   - telescope
   - treesitter
+  - blink-cmp
   - which-key
   - neo-tree
   - mini-statusline

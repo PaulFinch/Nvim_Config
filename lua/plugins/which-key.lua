@@ -7,4 +7,5 @@ which_key.setup({
 which_key.add({
     { "<leader>p", group = "Packages" },
     { "<leader>s", group = "Search" },
+    { "<leader>t", group = "Toggle" },
 })

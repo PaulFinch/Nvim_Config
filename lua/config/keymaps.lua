@@ -7,10 +7,11 @@ vim.keymap.set("n", "<leader>pu", function()
   vim.pack.update()
 end, { desc = "[P]ackage [U]pdate" })
 
-vim.keymap.set("n", "-", function()
+vim.keymap.set("n", "<leader>tf", function()
     require("neo-tree.command").execute({
         source = "filesystem",
         toggle = true,
         reveal = true,
     })
-end, { desc = "Toggle file tree" })
+end, { desc = "[T]oggle [F]ile Explorer" })
+

@@ -23,9 +23,8 @@
   - treesitter
   - mini-statusline
   - gitsigns
-  - nui
-  - nvim-web-devicons
   - plenary
+  - nvim-web-devicons
 
 - Theme: monokai (machine)
 

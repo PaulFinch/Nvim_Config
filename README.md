@@ -1,4 +1,4 @@
-- Options:
+## Options
   - vim.g.mapleader = " "
   - vim.g.maplocalleader = " "
   - vim.o.tabstop = 4
@@ -18,7 +18,7 @@
   - vim.o.undofile = true
   - vim.o.clipboard = "unnamedplus"
 
-- Plugins (Managed by vim.pack):
+## Plugins (vim.pack)
   - telescope
   - treesitter
   - which-key
@@ -29,9 +29,10 @@
   - nvim-web-devicons
   - nui
 
-- Theme: monokai-pro (machine)
+## Theme
+  - monokai-pro (machine)
 
-- Managed Languages by treesitter:
+## Managed Languages by treesitter
   - bash
   - c
   - cpp
@@ -43,7 +44,7 @@
   - yaml
   - regex
 
-- Keymaps:
+## Keymaps
   - space: leader key
   - '-': Toggle neo-tree
 

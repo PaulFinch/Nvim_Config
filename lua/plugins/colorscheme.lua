@@ -1,10 +1,7 @@
-local ok, monokai = pcall(require, "monokai-pro")
-if not ok then
-  return
-end
+local monokai = require("monokai-pro")
 
 monokai.setup({
   filter = "machine",
 })
 
-pcall(vim.cmd.colorscheme, "monokai-pro")
+vim.cmd.colorscheme("monokai-pro")

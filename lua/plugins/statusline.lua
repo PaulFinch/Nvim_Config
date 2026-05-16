@@ -1,6 +1,3 @@
-local ok, statusline = pcall(require, "mini.statusline")
-if not ok then
-  return
-end
+local statusline = require("mini.statusline")
 
 statusline.setup({})

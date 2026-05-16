@@ -1,13 +1,13 @@
-local map = vim.keymap.set
+vim.keymap.set("n", "<leader>sc", "<cmd>Telescope commands<cr>", { desc = "[S]earch [C]ommands" })
+vim.keymap.set("n", "<leader>sk", "<cmd>Telescope keymaps<cr>", { desc = "[S]earch [K]eymaps" })
+vim.keymap.set("n", "<leader>sf", "<cmd>Telescope find_files<cr>", { desc = "[S]earch [F]iles" })
+vim.keymap.set("n", "<leader>sg", "<cmd>Telescope live_grep<cr>", { desc = "[S]earch [G]rep" })
 
-map("n", "<leader>sf", "<cmd>Telescope find_files<cr>", { desc = "Search files" })
-map("n", "<leader>sg", "<cmd>Telescope live_grep<cr>", { desc = "Search grep" })
-
-map("n", "<leader>pu", function()
+vim.keymap.set("n", "<leader>pu", function()
   vim.pack.update()
-end, { desc = "Package upgrade" })
+end, { desc = "[P]ackage [U]pdate" })
 
-map("n", "-", function()
+vim.keymap.set("n", "-", function()
     require("neo-tree.command").execute({
         source = "filesystem",
         toggle = true,

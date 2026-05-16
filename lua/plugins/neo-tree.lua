@@ -1,7 +1,4 @@
-local ok, neo_tree = pcall(require, "neo-tree")
-if not ok then
-  return
-end
+local neo_tree = require("neo-tree")
 
 neo_tree.setup({
     close_if_last_window = true,

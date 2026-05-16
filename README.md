@@ -29,7 +29,7 @@
   - nvim-web-devicons
   - nui
 
-- Theme: monokai (machine)
+- Theme: monokai-pro (machine)
 
 - Managed Languages by treesitter:
   - bash
@@ -46,6 +46,9 @@
 - Keymaps:
   - space: leader key
   - '-': Toggle neo-tree
+
+  - leader + sc : search command
+  - leader + sf : search keymap
   - leader + sf : search files
   - leader + sg : search grep
-  - leader + pu : package upgrade (vim.pack)
+  - leader + pu : package update

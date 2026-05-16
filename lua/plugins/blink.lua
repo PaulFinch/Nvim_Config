@@ -1,5 +1,4 @@
 local blink = require("blink.cmp")
-local native = require("blink.lib.native")
 
 blink.setup({
     keymap = {
@@ -9,7 +8,7 @@ blink.setup({
         use_nvim_cmp_as_default = false,
     },
     fuzzy = { 
-        implementation = "prefer_rust",
+        implementation = "lua",
     },
     completion = {
         ghost_text = {
@@ -17,9 +16,10 @@ blink.setup({
         },
         documentation = {
             auto_show = true,
+            auto_show_delay_ms = 500,
         },
     },
     sources = {
-        default = { "path", "buffer" },
+        default = { "lsp", "path", "buffer" },
     },
 })

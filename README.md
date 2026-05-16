@@ -22,10 +22,12 @@
   - telescope
   - treesitter
   - which-key
+  - neo-tree
   - mini-statusline
   - gitsigns
   - plenary
   - nvim-web-devicons
+  - nui
 
 - Theme: monokai (machine)
 
@@ -43,6 +45,7 @@
 
 - Keymaps:
   - space: leader key
+  - '-': Toggle neo-tree
   - leader + sf : search files
   - leader + sg : search grep
   - leader + pu : package upgrade (vim.pack)

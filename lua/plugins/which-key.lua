@@ -1,3 +1,10 @@
+vim.pack.add({
+  { src = "https://github.com/folke/which-key.nvim" },
+},{
+  confirm = false,
+  load = true,
+})
+
 local which_key = require("which-key")
 
 which_key.setup({
@@ -5,7 +12,7 @@ which_key.setup({
 })
 
 which_key.add({
-    { "<leader>p", group = "Packages" },
-    { "<leader>s", group = "Search" },
-    { "<leader>t", group = "Toggle" },
+  { "<leader>p", group = "Packages" },
+  { "<leader>s", group = "Search" },
+  { "<leader>t", group = "Toggle" },
 })

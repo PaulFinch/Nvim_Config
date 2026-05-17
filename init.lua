@@ -15,6 +15,7 @@ vim.pack.add({
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
   { src = "https://github.com/loctvl842/monokai-pro.nvim" },
   { src = "https://github.com/folke/noice.nvim" },
+  { src = "https://github.com/rcarriga/nvim-notify" },
 })
 
 require("plugins.colorscheme")

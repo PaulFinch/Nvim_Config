@@ -6,3 +6,5 @@ noice.setup({
         lsp_doc_border = true,
     },
 })
+
+vim.notify = require("notify")

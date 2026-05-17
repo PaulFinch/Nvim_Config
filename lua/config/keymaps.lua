@@ -2,7 +2,6 @@ vim.keymap.set("n", "<leader>sc", "<cmd>Telescope commands<cr>", { desc = "[S]ea
 vim.keymap.set("n", "<leader>sk", "<cmd>Telescope keymaps<cr>", { desc = "[S]earch [K]eymaps" })
 vim.keymap.set("n", "<leader>sf", "<cmd>Telescope find_files<cr>", { desc = "[S]earch [F]iles" })
 vim.keymap.set("n", "<leader>sg", "<cmd>Telescope live_grep<cr>", { desc = "[S]earch [G]rep" })
-vim.keymap.set("n", "<leader>sw", "<cmd>Telescope grep_string<cr>", { desc = "[S]earch [W]ord" })
 
 vim.keymap.set("n", "<leader>pu", function()
   vim.pack.update()

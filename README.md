@@ -26,6 +26,9 @@
   - neo-tree
   - mini-statusline
   - gitsigns
+  - noice
+  - notify
+
   - plenary
   - nvim-web-devicons
   - nui
@@ -52,5 +55,4 @@
   - leader + sf : search keymap
   - leader + sf : search files
   - leader + sg : search grep 
-  - leader + sw : search current word
   - leader + pu : package update

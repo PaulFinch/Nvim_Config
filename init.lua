@@ -14,6 +14,7 @@ vim.pack.add({
   { src = "https://github.com/echasnovski/mini.nvim" },
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
   { src = "https://github.com/loctvl842/monokai-pro.nvim" },
+  { src = "https://github.com/folke/noice.nvim" },
 })
 
 require("plugins.colorscheme")
@@ -24,3 +25,4 @@ require("plugins.treesitter")
 require("plugins.neo-tree")
 require("plugins.statusline")
 require("plugins.gitsigns")
+require("plugins.noice")

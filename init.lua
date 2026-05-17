@@ -1,3 +1,6 @@
+require("config.options")
+require("config.keymaps")
+
 vim.pack.add({
   { src = "https://github.com/nvim-lua/plenary.nvim" },
   { src = "https://github.com/nvim-tree/nvim-web-devicons" },
@@ -12,9 +15,6 @@ vim.pack.add({
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
   { src = "https://github.com/loctvl842/monokai-pro.nvim" },
 })
-
-require("config.options")
-require("config.keymaps")
 
 require("plugins.colorscheme")
 require("plugins.which-key")

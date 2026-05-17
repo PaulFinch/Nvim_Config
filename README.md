@@ -46,11 +46,11 @@
   - regex
 
 ## Keymaps
-  - space: leader key
-  - '-': Toggle neo-tree
-
+  - space : leader key
+  - leader + tf : Toggle neo-tree
   - leader + sc : search command
   - leader + sf : search keymap
   - leader + sf : search files
-  - leader + sg : search grep
+  - leader + sg : search grep 
+  - leader + sw : search current word
   - leader + pu : package update

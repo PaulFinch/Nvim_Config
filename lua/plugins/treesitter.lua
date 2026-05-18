@@ -18,6 +18,7 @@ treesitter.setup({
     "json",
     "yaml",
     "regex",
+    "lua",
   },
   highlight = {
     enable = true,

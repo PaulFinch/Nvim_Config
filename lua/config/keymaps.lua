@@ -4,6 +4,10 @@ vim.keymap.set("n", "<leader>sf", "<cmd>Telescope find_files<cr>", { desc = "[S]
 vim.keymap.set("n", "<leader>sg", "<cmd>Telescope live_grep<cr>", { desc = "[S]earch [G]rep" })
 vim.keymap.set("n", "<leader>st", "<cmd>TodoTelescope<cr>", { desc = "[S]earch [T]odo" })
 
+vim.keymap.set("n", "<leader>ff", function()
+  require("conform").format()
+end, { desc = "[F]ormat [F]ile" })
+
 vim.keymap.set("n", "<leader>pu", function()
   vim.pack.update()
 end, { desc = "[P]ackage [U]pdate" })

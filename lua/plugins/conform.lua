@@ -1,0 +1,22 @@
+vim.pack.add({
+    { src = "https://github.com/stevearc/conform.nvim" },
+},{
+    confirm = false,
+})
+
+local conform = require("conform")
+
+conform.setup({
+    formatters_by_ft = {
+        bash = { "shfmt" },
+        c = { "clang_format" },
+        cpp = { "clang_format" },
+        markdown = { "prettier" },
+        python = { "black" },
+        rust = { "rustfmt" },
+        go = { "gofmt" },
+        json = { "prettier" },
+        yaml = { "prettier" },
+        lua = { "stylua" },
+    },
+})

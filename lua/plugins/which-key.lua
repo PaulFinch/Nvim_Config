@@ -14,4 +14,5 @@ which_key.add({
   { "<leader>p", group = "Packages" },
   { "<leader>s", group = "Search" },
   { "<leader>t", group = "Toggle" },
+  { "<leader>f", group = "Format" },
 })

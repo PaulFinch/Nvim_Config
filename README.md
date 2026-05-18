@@ -26,10 +26,10 @@
   - neo-tree
   - mini-statusline
   - gitsigns
-  - noice
-  - notify
+  - noice / notify
   - mason
   - todo-comments
+  - conform
 
   - plenary
   - nvim-web-devicons
@@ -49,6 +49,7 @@
   - json
   - yaml
   - regex
+  - lua
 
 ## Managed LSP by mason
   - lua_ls
@@ -70,3 +71,4 @@
   - leader + sg : search grep 
   - leader + st : search todo 
   - leader + pu : package update
+  - leader + ff : format file

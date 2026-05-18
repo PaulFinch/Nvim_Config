@@ -28,6 +28,8 @@
   - gitsigns
   - noice
   - notify
+  - mason
+  - todo-comments
 
   - plenary
   - nvim-web-devicons
@@ -48,6 +50,17 @@
   - yaml
   - regex
 
+## Managed LSP by mason
+  - lua_ls
+  - bashls
+  - clangd
+  - gopls
+  - jsonls
+  - marksman
+  - pyright
+  - rust_analyzer
+  - yamlls
+
 ## Keymaps
   - space : leader key
   - leader + tf : Toggle neo-tree
@@ -55,4 +68,5 @@
   - leader + sf : search keymap
   - leader + sf : search files
   - leader + sg : search grep 
+  - leader + st : search todo 
   - leader + pu : package update

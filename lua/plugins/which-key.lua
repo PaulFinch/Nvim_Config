@@ -2,7 +2,6 @@ vim.pack.add({
   { src = "https://github.com/folke/which-key.nvim" },
 },{
   confirm = false,
-  load = true,
 })
 
 local which_key = require("which-key")

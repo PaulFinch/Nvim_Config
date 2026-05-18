@@ -2,7 +2,6 @@ vim.pack.add({
   { src = "https://github.com/echasnovski/mini.nvim" },
 },{
   confirm = false,
-  load = true,
 })
 
 local statusline = require("mini.statusline")

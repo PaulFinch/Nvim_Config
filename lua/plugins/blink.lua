@@ -3,7 +3,6 @@ vim.pack.add({
     { src = "https://github.com/Saghen/blink.cmp" },
 },{
     confirm = false,
-    load = true,
 })
 
 local blink = require("blink.cmp")

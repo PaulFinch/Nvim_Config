@@ -4,5 +4,4 @@ vim.pack.add({
   { src = "https://github.com/MunifTanjim/nui.nvim" },
 },{
   confirm = false,
-  load = true,
 })

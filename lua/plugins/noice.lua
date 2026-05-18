@@ -3,7 +3,6 @@ vim.pack.add({
   { src = "https://github.com/rcarriga/nvim-notify" },
 },{
   confirm = false,
-  load = true,
 })
 
 local noice = require("noice")

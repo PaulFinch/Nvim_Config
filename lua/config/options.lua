@@ -1,6 +1,5 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-vim.g.netrw_banner = 0
 
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
@@ -19,6 +18,9 @@ vim.o.termguicolors = true
 vim.o.undofile = true
 vim.o.clipboard = "unnamedplus"
 
+vim.g.netrw_banner = 0
+vim.g.have_nerd_font = true
+
 vim.o.inccommand = 'split'
 vim.o.splitbelow = true
 vim.o.splitright = true
@@ -27,5 +29,5 @@ vim.o.smartcase = true
 vim.o.laststatus = 3
 vim.o.swapfile = false
 vim.o.backup = false
-vim.o.guicursor = ""
-vim.o.scrolloff = 8
+vim.o.scrolloff = 10
+vim.o.cursorline = true

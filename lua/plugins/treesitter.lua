@@ -26,5 +26,4 @@ treesitter.setup({
   indent = {
     enable = true,
   },
-  parser_install_dir = vim.fn.stdpath("data") .. "/site",
 })

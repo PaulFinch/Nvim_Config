@@ -2,7 +2,6 @@ vim.pack.add({
   { src = "https://github.com/nvim-neo-tree/neo-tree.nvim" },
 },{
     confirm = false,
-    load = false,
 })
 
 local neo_tree = require("neo-tree")

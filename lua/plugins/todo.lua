@@ -4,6 +4,4 @@ vim.pack.add({
   confirm = false,
 })
 
-local todo = require("todo-comments")
-
-todo.setup({})
+require("todo-comments").setup({})

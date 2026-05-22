@@ -4,6 +4,4 @@ vim.pack.add({
   confirm = false,
 })
 
-local telescope = require("telescope")
-
-telescope.setup({})
+require("telescope").setup({})

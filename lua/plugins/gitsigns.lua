@@ -4,6 +4,4 @@ vim.pack.add({
   confirm = false,
 })
 
-local gitsigns = require("gitsigns")
-
-gitsigns.setup({})
+require("gitsigns").setup({})

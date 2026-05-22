@@ -4,9 +4,7 @@ vim.pack.add({
   confirm = false,
 })
 
-local monokai = require("monokai-pro")
-
-monokai.setup({
+require("monokai-pro").setup({
   filter = "machine",
 })
 

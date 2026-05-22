@@ -5,9 +5,7 @@ vim.pack.add({
     confirm = false,
 })
 
-local blink = require("blink.cmp")
-
-blink.setup({
+require("blink.cmp").setup({
     keymap = {
         preset = "super-tab",
     },

@@ -4,9 +4,7 @@ vim.pack.add({
     confirm = false,
 })
 
-local conform = require("conform")
-
-conform.setup({
+require("conform").setup({
     formatters_by_ft = {
         bash = { "shfmt" },
         c = { "clang_format" },

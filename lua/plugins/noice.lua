@@ -5,9 +5,7 @@ vim.pack.add({
   confirm = false,
 })
 
-local noice = require("noice")
-
-noice.setup({
+require("noice").setup({
   presets = {
     command_palette = true,
     lsp_doc_border = true,

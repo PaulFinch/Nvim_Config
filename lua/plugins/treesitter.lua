@@ -4,9 +4,7 @@ vim.pack.add({
   confirm = false,
 })
 
-local treesitter = require("nvim-treesitter")
-
-treesitter.setup({
+require("nvim-treesitter").setup({
   ensure_installed = {
     "bash",
     "c",

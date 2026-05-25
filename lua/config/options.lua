@@ -21,7 +21,7 @@ vim.o.clipboard = "unnamedplus"
 vim.g.netrw_banner = 0
 vim.g.have_nerd_font = true
 
-vim.o.inccommand = 'split'
+vim.o.inccommand = "split"
 vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.ignorecase = true
@@ -31,3 +31,4 @@ vim.o.swapfile = false
 vim.o.backup = false
 vim.o.scrolloff = 10
 vim.o.cursorline = true
+--vim.o.cmdheight = 0

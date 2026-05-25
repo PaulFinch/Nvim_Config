@@ -66,9 +66,10 @@
   - space : leader key
   - leader + tf : Toggle neo-tree
   - leader + sc : search command
-  - leader + sf : search keymap
+  - leader + sk : search keymap
   - leader + sf : search files
   - leader + sg : search grep 
-  - leader + st : search todo 
+  - leader + st : search todo
+  - leader + pb : package build
   - leader + pu : package update
   - leader + ff : format file

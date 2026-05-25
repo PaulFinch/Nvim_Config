@@ -5,12 +5,18 @@ vim.keymap.set("n", "<leader>sg", "<cmd>Telescope live_grep<cr>", { desc = "[S]e
 vim.keymap.set("n", "<leader>st", "<cmd>TodoTelescope<cr>", { desc = "[S]earch [T]odo" })
 
 vim.keymap.set("n", "<leader>ff", function()
-  require("conform").format()
+    require("conform").format()
 end, { desc = "[F]ormat [F]ile" })
 
 vim.keymap.set("n", "<leader>pu", function()
-  vim.pack.update()
+    vim.pack.update()
 end, { desc = "[P]ackage [U]pdate" })
+
+vim.keymap.set("n", "<leader>pb", function()
+    vim.cmd.MasonToolsUpdate()
+    vim.cmd.BuildTreeSitter()
+    vim.cmd.BuildBlink()
+end, { desc = "[P]ackage [B]uild" })
 
 vim.keymap.set("n", "<leader>tf", function()
     require("neo-tree.command").execute({
@@ -20,8 +26,10 @@ vim.keymap.set("n", "<leader>tf", function()
     })
 end, { desc = "[T]oggle [F]ile Explorer" })
 
-vim.api.nvim_create_autocmd('TextYankPost', {
-  desc = 'Highlight when yanking (copying) text',
-  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
-  callback = function() vim.hl.on_yank() end,
+vim.api.nvim_create_autocmd("TextYankPost", {
+    desc = "Highlight when yanking (copying) text",
+    group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+    callback = function()
+        vim.hl.on_yank()
+    end,
 })

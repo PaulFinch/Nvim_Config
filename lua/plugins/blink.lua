@@ -1,19 +1,27 @@
 vim.pack.add({
     { src = "https://github.com/Saghen/blink.lib" },
     { src = "https://github.com/Saghen/blink.cmp" },
-},{
+}, {
     confirm = false,
 })
 
-require("blink.cmp").setup({
+local blink = require("blink.cmp")
+
+vim.api.nvim_create_user_command("BuildBlink", function()
+    blink.build({ force = true }):wait(120000)
+end, {
+    desc = "Build blink.cmp Rust fuzzy matcher",
+})
+
+blink.setup({
     keymap = {
         preset = "super-tab",
     },
     appearance = {
         use_nvim_cmp_as_default = false,
     },
-    fuzzy = { 
-        implementation = "lua",
+    fuzzy = {
+        implementation = "prefer_rust",
     },
     completion = {
         ghost_text = {

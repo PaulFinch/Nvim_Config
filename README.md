@@ -17,6 +17,19 @@
   - vim.o.termguicolors = true
   - vim.o.undofile = true
   - vim.o.clipboard = "unnamedplus"
+  - vim.g.netrw_banner = 0
+  - vim.g.have_nerd_font = true
+  - vim.o.inccommand = "split"
+  - vim.o.splitbelow = true
+  - vim.o.splitright = true
+  - vim.o.ignorecase = true
+  - vim.o.smartcase = true
+  - vim.o.laststatus = 3
+  - vim.o.swapfile = false
+  - vim.o.backup = false
+  - vim.o.scrolloff = 10
+  - vim.o.cursorline = true
+  - vim.o.smoothscroll = true
 
 ## Plugins (vim.pack)
   - telescope
@@ -29,8 +42,13 @@
   - gitsigns
   - noice / notify
   - mason
+  - mason-lspconfig
+  - mason-tool-installer
+  - nvim-lspconfig
   - todo-comments
   - conform
+  - nvim-autopairs
+  - nvim-surround
 
   - plenary
   - nvim-web-devicons
@@ -66,10 +84,28 @@
   - rust_analyzer
   - yamlls
 
+## Managed Tools by mason-tool-installer
+  - shfmt
+  - clang-format
+  - black
+  - stylua
+  - prettier
+
+## Formatters by conform
+  - bash : shfmt
+  - c / cpp : clang_format
+  - markdown / json / yaml : prettier
+  - python : black
+  - rust : rustfmt
+  - go : gofmt
+  - lua : stylua
+
 ## Keymaps
   - space : leader key
-  - leader + tf : Toggle neo-tree
-  - leader + ta : Toggle aerial
+  - leader + tf : toggle neo-tree
+  - leader + ta : toggle aerial
+  - leader + th : toggle highlight
+  - leader + tt : new tab
   - leader + sc : search command
   - leader + sk : search keymap
   - leader + sf : search files
@@ -79,4 +115,3 @@
   - leader + pb : package build
   - leader + pu : package update
   - leader + ff : format file
-  - leader + nh : clear search

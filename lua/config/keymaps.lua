@@ -4,9 +4,17 @@ vim.keymap.set("n", "<leader>sf", "<cmd>Telescope find_files<cr>", { desc = "[S]
 vim.keymap.set("n", "<leader>sg", "<cmd>Telescope live_grep<cr>", { desc = "[S]earch [G]rep" })
 vim.keymap.set("n", "<leader>st", "<cmd>TodoTelescope<cr>", { desc = "[S]earch [T]odo" })
 vim.keymap.set("n", "<leader>sa", "<cmd>Telescope aerial<cr>", { desc = "[S]earch [A]erial" })
-vim.keymap.set("n", "<leader>nh", "<cmd>nohlsearch<cr>", { desc = "[N]o [H]ighlight - clear search" })
+
+vim.keymap.set("n", "<leader>th", "<cmd>nohlsearch<cr>", { desc = "[T]oggle [H]ighlight" })
 vim.keymap.set("n", "<leader>ta", "<cmd>AerialToggle<cr>", { desc = "[T]oggle [A]erial" })
 
+vim.keymap.set("n", "<leader>tf", function()
+    require("neo-tree.command").execute({
+        source = "filesystem",
+        toggle = true,
+        reveal = true,
+    })
+end, { desc = "[T]oggle [F]ile Explorer" })
 
 vim.keymap.set("n", "<leader>ff", function()
     require("conform").format()
@@ -21,14 +29,6 @@ vim.keymap.set("n", "<leader>pb", function()
     vim.cmd.BuildTreeSitter()
     vim.cmd.BuildBlink()
 end, { desc = "[P]ackage [B]uild" })
-
-vim.keymap.set("n", "<leader>tf", function()
-    require("neo-tree.command").execute({
-        source = "filesystem",
-        toggle = true,
-        reveal = true,
-    })
-end, { desc = "[T]oggle [F]ile Explorer" })
 
 vim.api.nvim_create_autocmd("TextYankPost", {
     desc = "Highlight when yanking (copying) text",

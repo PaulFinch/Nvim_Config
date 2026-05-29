@@ -23,7 +23,7 @@ require("mason").setup({})
 
 require("mason-lspconfig").setup({
     ensure_installed = servers,
-    automatic_enable = true,
+    automatic_enable = servers,
 })
 
 require("mason-tool-installer").setup({

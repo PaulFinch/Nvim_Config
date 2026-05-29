@@ -45,8 +45,10 @@ vim.api.nvim_create_autocmd("FileType", {
         "sh",
         "yaml",
     },
-    callback = function()
-        pcall(vim.treesitter.start)
-        vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+    callback = function(args)
+        local ok = pcall(vim.treesitter.start, args.buf)
+        if ok then
+            vim.bo[args.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+        end
     end,
 })

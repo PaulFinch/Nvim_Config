@@ -35,4 +35,9 @@ blink.setup({
     sources = {
         default = { "lsp", "path", "buffer" },
     },
+    cmdline = {
+        sources = {
+            default = { "buffer", "cmdline" },
+        },
+    },
 })

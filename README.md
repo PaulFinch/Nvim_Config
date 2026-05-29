@@ -21,6 +21,7 @@
 ## Plugins (vim.pack)
   - telescope
   - treesitter
+  - aerial
   - blink-cmp
   - which-key
   - neo-tree
@@ -50,6 +51,9 @@
   - yaml
   - regex
   - lua
+  - vim
+  - vimdoc
+  - query
 
 ## Managed LSP by mason
   - lua_ls
@@ -65,11 +69,13 @@
 ## Keymaps
   - space : leader key
   - leader + tf : Toggle neo-tree
+  - leader + ta : Toggle aerial
   - leader + sc : search command
   - leader + sk : search keymap
   - leader + sf : search files
   - leader + sg : search grep 
   - leader + st : search todo
+  - leader + sa : search aerial
   - leader + pb : package build
   - leader + pu : package update
   - leader + ff : format file

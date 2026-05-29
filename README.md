@@ -73,3 +73,4 @@
   - leader + pb : package build
   - leader + pu : package update
   - leader + ff : format file
+  - leader + nh : clear search

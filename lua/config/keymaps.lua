@@ -3,6 +3,7 @@ vim.keymap.set("n", "<leader>sk", "<cmd>Telescope keymaps<cr>", { desc = "[S]ear
 vim.keymap.set("n", "<leader>sf", "<cmd>Telescope find_files<cr>", { desc = "[S]earch [F]iles" })
 vim.keymap.set("n", "<leader>sg", "<cmd>Telescope live_grep<cr>", { desc = "[S]earch [G]rep" })
 vim.keymap.set("n", "<leader>st", "<cmd>TodoTelescope<cr>", { desc = "[S]earch [T]odo" })
+vim.keymap.set("n", "<leader>nh", "<cmd>nohlsearch<cr>", { desc = "[N]o [H]ighlight - clear search" })
 
 vim.keymap.set("n", "<leader>ff", function()
     require("conform").format()

@@ -1,5 +1,10 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+vim.loader.enable()
+
+vim.schedule(function()
+  vim.o.clipboard = "unnamedplus"
+end)
 
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
@@ -16,7 +21,6 @@ vim.o.mouse = "a"
 vim.o.showmode = false
 vim.o.termguicolors = true
 vim.o.undofile = true
-vim.o.clipboard = "unnamedplus"
 
 vim.g.netrw_banner = 0
 vim.g.have_nerd_font = true
@@ -32,3 +36,4 @@ vim.o.backup = false
 vim.o.scrolloff = 10
 vim.o.cursorline = true
 --vim.o.cmdheight = 0
+vim.o.smoothscroll = true

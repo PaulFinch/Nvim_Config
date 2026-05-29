@@ -18,6 +18,9 @@ local languages = {
     "yaml",
     "regex",
     "lua",
+    "vim",
+    "vimdoc",
+    "query",
 }
 
 treesitter.setup({})

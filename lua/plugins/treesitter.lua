@@ -26,8 +26,26 @@ local languages = {
 treesitter.setup({})
 
 vim.api.nvim_create_user_command("BuildTreeSitter", function()
-    treesitter.install(languages)
-    treesitter.update(languages)
+    local installed = {}
+    for _, lang in ipairs(treesitter.get_installed("parsers")) do
+        installed[lang] = true
+    end
+
+    local missing = vim.tbl_filter(function(lang)
+        return not installed[lang]
+    end, languages)
+
+    local existing = vim.tbl_filter(function(lang)
+        return installed[lang]
+    end, languages)
+
+    if #missing > 0 then
+        treesitter.install(missing, { summary = true }):wait(120000)
+    end
+
+    if #existing > 0 then
+        treesitter.update(existing, { summary = true }):wait(120000)
+    end
 end, {
     desc = "Install and update configured treesitter parsers",
 })

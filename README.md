@@ -105,7 +105,6 @@
   - leader + tf : toggle neo-tree
   - leader + ta : toggle aerial
   - leader + th : toggle highlight
-  - leader + tt : new tab
   - leader + sc : search command
   - leader + sk : search keymap
   - leader + sf : search files

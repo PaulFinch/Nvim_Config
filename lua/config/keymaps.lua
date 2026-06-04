@@ -17,7 +17,10 @@ vim.keymap.set("n", "<leader>tf", function()
 end, { desc = "[T]oggle [F]ile Explorer" })
 
 vim.keymap.set("n", "<leader>ff", function()
-    require("conform").format()
+    require("conform").format({
+        async = true,
+        lsp_format = "fallback",
+    })
 end, { desc = "[F]ormat [F]ile" })
 
 vim.keymap.set("n", "<leader>pu", function()

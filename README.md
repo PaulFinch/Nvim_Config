@@ -42,7 +42,6 @@
   - gitsigns
   - noice / notify
   - mason
-  - mason-lspconfig
   - mason-tool-installer
   - nvim-lspconfig
   - todo-comments
@@ -61,19 +60,20 @@
   - bash
   - c
   - cpp
-  - markdown
-  - python
-  - rust
   - go
   - json
-  - yaml
-  - regex
   - lua
+  - markdown
+  - markdown_inline
+  - python
+  - query
+  - regex
+  - rust
   - vim
   - vimdoc
-  - query
+  - yaml
 
-## Managed LSP by mason
+## Enabled LSP by vim.lsp
   - lua_ls
   - bashls
   - clangd
@@ -84,7 +84,16 @@
   - rust_analyzer
   - yamlls
 
-## Managed Tools by mason-tool-installer
+## Managed Binaries by mason-tool-installer
+  - lua-language-server
+  - bash-language-server
+  - clangd
+  - gopls
+  - json-lsp
+  - marksman
+  - pyright
+  - rust-analyzer
+  - yaml-language-server
   - shfmt
   - clang-format
   - black
@@ -105,6 +114,7 @@
   - leader + tf : toggle neo-tree
   - leader + ta : toggle aerial
   - leader + th : toggle highlight
+  - leader + tt : toggle treesitter
   - leader + sc : search command
   - leader + sk : search keymap
   - leader + sf : search files

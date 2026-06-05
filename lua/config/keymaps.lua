@@ -8,6 +8,16 @@ vim.keymap.set("n", "<leader>sa", "<cmd>Telescope aerial<cr>", { desc = "[S]earc
 vim.keymap.set("n", "<leader>th", "<cmd>nohlsearch<cr>", { desc = "[T]oggle [H]ighlight" })
 vim.keymap.set("n", "<leader>ta", "<cmd>AerialToggle<cr>", { desc = "[T]oggle [A]erial" })
 
+vim.keymap.set("n", "<leader>tt", function()
+    local bufnr = vim.api.nvim_get_current_buf()
+
+    if vim.treesitter.highlighter.active[bufnr] then
+        vim.treesitter.stop(bufnr)
+    else
+        pcall(vim.treesitter.start, bufnr)
+    end
+end, { desc = "[T]oggle [T]reeSitter" })
+
 vim.keymap.set("n", "<leader>tf", function()
     require("neo-tree.command").execute({
         source = "filesystem",
@@ -24,12 +34,11 @@ vim.keymap.set("n", "<leader>ff", function()
 end, { desc = "[F]ormat [F]ile" })
 
 vim.keymap.set("n", "<leader>pu", function()
+    vim.cmd.MasonToolsUpdate()
     vim.pack.update()
 end, { desc = "[P]ackage [U]pdate" })
 
 vim.keymap.set("n", "<leader>pb", function()
-    vim.cmd.MasonToolsUpdate()
-    vim.cmd.BuildTreeSitter()
     vim.cmd.BuildBlink()
 end, { desc = "[P]ackage [B]uild" })
 

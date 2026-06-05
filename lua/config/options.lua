@@ -2,10 +2,6 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.loader.enable()
 
-vim.schedule(function()
-  vim.o.clipboard = "unnamedplus"
-end)
-
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.softtabstop = 4
@@ -21,10 +17,8 @@ vim.o.mouse = "a"
 vim.o.showmode = false
 vim.o.termguicolors = true
 vim.o.undofile = true
-
-vim.g.netrw_banner = 0
-vim.g.have_nerd_font = true
-
+vim.o.clipboard = "unnamedplus"
+vim.o.wrap = false
 vim.o.inccommand = "split"
 vim.o.splitbelow = true
 vim.o.splitright = true
@@ -37,3 +31,7 @@ vim.o.scrolloff = 10
 vim.o.cursorline = true
 --vim.o.cmdheight = 0
 vim.o.smoothscroll = true
+vim.o.winborder = "rounded"
+vim.o.showmatch = true
+vim.g.netrw_banner = 0
+vim.g.have_nerd_font = true

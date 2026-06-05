@@ -34,13 +34,10 @@ vim.keymap.set("n", "<leader>ff", function()
 end, { desc = "[F]ormat [F]ile" })
 
 vim.keymap.set("n", "<leader>pu", function()
+    vim.cmd.BuildBlink()
     vim.cmd.MasonToolsUpdate()
     vim.pack.update()
 end, { desc = "[P]ackage [U]pdate" })
-
-vim.keymap.set("n", "<leader>pb", function()
-    vim.cmd.BuildBlink()
-end, { desc = "[P]ackage [B]uild" })
 
 vim.api.nvim_create_autocmd("TextYankPost", {
     desc = "Highlight when yanking (copying) text",

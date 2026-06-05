@@ -121,6 +121,5 @@
   - leader + sg : search grep 
   - leader + st : search todo
   - leader + sa : search aerial
-  - leader + pb : package build
   - leader + pu : package update
   - leader + ff : format file

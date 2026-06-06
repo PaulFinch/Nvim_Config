@@ -38,6 +38,4 @@ blink.setup({
 
 vim.api.nvim_create_user_command("BuildBlink", function()
     blink.build({ force = true }):wait(120000)
-end, {
-    desc = "Build blink.cmp Rust fuzzy matcher",
-})
+end, {})

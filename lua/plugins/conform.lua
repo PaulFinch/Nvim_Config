@@ -24,6 +24,4 @@ vim.api.nvim_create_user_command("FormatFile", function()
         async = true,
         lsp_format = "fallback",
     })
-end, {
-    desc = "Format File",
-})
+end, {})

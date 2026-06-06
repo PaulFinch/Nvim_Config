@@ -47,6 +47,4 @@ vim.api.nvim_create_user_command("ToggleTreesitter", function()
     else
         pcall(vim.treesitter.start, bufnr)
     end
-end, {
-    desc = "Toggle TreeSitter",
-})
+end, {})

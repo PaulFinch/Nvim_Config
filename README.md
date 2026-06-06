@@ -1,3 +1,5 @@
+# Just Another Neovim Config
+
 ## Keymaps
   - space : leader key
   - leader + tx : toggle file explorer

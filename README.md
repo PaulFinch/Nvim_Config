@@ -33,6 +33,7 @@
 
 ## Plugins (vim.pack)
   - telescope
+  - telescope-project
   - treesitter
   - aerial
   - blink-cmp
@@ -119,6 +120,7 @@
   - leader + sk : search keymap
   - leader + sf : search files
   - leader + sg : search grep 
+  - leader + sp : search project
   - leader + st : search todo
   - leader + sa : search aerial
   - leader + pu : package update

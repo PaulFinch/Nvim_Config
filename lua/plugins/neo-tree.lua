@@ -21,3 +21,13 @@ require("neo-tree").setup({
         width = 32,
     },
 })
+
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    if vim.fn.argc() == 0 then
+      vim.schedule(function()
+        vim.cmd("Neotree filesystem reveal left")
+      end)
+    end
+  end,
+})

@@ -10,6 +10,7 @@ vim.keymap.set("n", "<leader>sa", "<cmd>Telescope aerial<cr>", { desc = "[S]earc
 -- Toggle
 vim.keymap.set("n", "<leader>ta", "<cmd>AerialToggle<cr>", { desc = "[T]oggle [A]erial" })
 vim.keymap.set("n", "<leader>tt", "<cmd>ToggleTreesitter<cr>", { desc = "[T]oggle [T]reeSitter" })
+vim.keymap.set("n", "<leader>tx", "<CMD>Oil<CR>", { desc = "[T]oggle e[X]plorer" })
 
 -- Format
 vim.keymap.set("n", "<leader>ff", "<cmd>FormatFile<cr>", { desc = "[F]ormat [F]ile" })

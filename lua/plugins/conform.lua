@@ -18,3 +18,12 @@ require("conform").setup({
         lua = { "stylua" },
     },
 })
+
+vim.api.nvim_create_user_command("FormatFile", function()
+    require("conform").format({
+        async = true,
+        lsp_format = "fallback",
+    })
+end, {
+    desc = "Format File",
+})

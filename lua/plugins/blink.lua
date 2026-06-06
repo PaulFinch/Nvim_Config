@@ -7,12 +7,6 @@ vim.pack.add({
 
 local blink = require("blink.cmp")
 
-vim.api.nvim_create_user_command("BuildBlink", function()
-    blink.build({ force = true }):wait(120000)
-end, {
-    desc = "Build blink.cmp Rust fuzzy matcher",
-})
-
 blink.setup({
     keymap = {
         preset = "super-tab",
@@ -40,4 +34,10 @@ blink.setup({
             default = { "buffer", "cmdline" },
         },
     },
+})
+
+vim.api.nvim_create_user_command("BuildBlink", function()
+    blink.build({ force = true }):wait(120000)
+end, {
+    desc = "Build blink.cmp Rust fuzzy matcher",
 })

@@ -9,36 +9,23 @@ vim.keymap.set("n", "<leader>sa", "<cmd>Telescope aerial<cr>", { desc = "[S]earc
 
 -- Toggle
 vim.keymap.set("n", "<leader>ta", "<cmd>AerialToggle<cr>", { desc = "[T]oggle [A]erial" })
-vim.keymap.set("n", "<leader>tt", function()
-    local bufnr = vim.api.nvim_get_current_buf()
-
-    if vim.treesitter.highlighter.active[bufnr] then
-        vim.treesitter.stop(bufnr)
-    else
-        pcall(vim.treesitter.start, bufnr)
-    end
-end, { desc = "[T]oggle [T]reeSitter" })
+vim.keymap.set("n", "<leader>tt", "<cmd>ToggleTreesitter<cr>", { desc = "[T]oggle [T]reeSitter" })
 
 -- Format
-vim.keymap.set("n", "<leader>ff", function()
-    require("conform").format({
-        async = true,
-        lsp_format = "fallback",
-    })
-end, { desc = "[F]ormat [F]ile" })
+vim.keymap.set("n", "<leader>ff", "<cmd>FormatFile<cr>", { desc = "[F]ormat [F]ile" })
 
 -- Package
 vim.keymap.set("n", "<leader>pu", function()
-    vim.cmd.BuildBlink()
-    vim.cmd.MasonToolsUpdate()
-    vim.pack.update()
+	vim.cmd.BuildBlink()
+	vim.cmd.MasonToolsUpdate()
+	vim.pack.update()
 end, { desc = "[P]ackage [U]pdate" })
 
 -- Autocmd
 vim.api.nvim_create_autocmd("TextYankPost", {
-    desc = "Highlight when yanking (copying) text",
-    group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
-    callback = function()
-        vim.hl.on_yank()
-    end,
+	desc = "Highlight when yanking (copying) text",
+	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+	callback = function()
+		vim.hl.on_yank()
+	end,
 })

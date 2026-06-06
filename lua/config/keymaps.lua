@@ -19,14 +19,6 @@ vim.keymap.set("n", "<leader>tt", function()
     end
 end, { desc = "[T]oggle [T]reeSitter" })
 
-vim.keymap.set("n", "<leader>tf", function()
-    require("neo-tree.command").execute({
-        source = "filesystem",
-        toggle = true,
-        reveal = true,
-    })
-end, { desc = "[T]oggle [F]ile Explorer" })
-
 -- Format
 vim.keymap.set("n", "<leader>ff", function()
     require("conform").format({

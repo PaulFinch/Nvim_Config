@@ -4,7 +4,6 @@
   - space : leader key
   - leader + tx : toggle file explorer
   - leader + ta : toggle aerial
-  - leader + th : toggle highlight
   - leader + tt : toggle treesitter
   - leader + sc : search command
   - leader + sk : search keymap

@@ -8,14 +8,10 @@ vim.keymap.set("n", "<leader>sa", "<cmd>Telescope aerial<cr>", { desc = "[S]earc
 
 -- Toggle
 vim.keymap.set("n", "<leader>ta", "<cmd>AerialToggle<cr>", { desc = "[T]oggle [A]erial" })
-vim.keymap.set("n", "<leader>tx", "<CMD>Oil<CR>", { desc = "[T]oggle File E[X]plorer" })
-
--- Format
-vim.keymap.set("n", "<leader>ff", "<cmd>FormatFile<cr>", { desc = "[F]ormat [F]ile" })
-
--- Package
-vim.keymap.set("n", "<leader>pu", function()
+vim.keymap.set("n", "<leader>tx", "<CMD>Oil<CR>", { desc = "[T]oggle E[X]plorer" })
+vim.keymap.set("n", "<leader>tf", "<cmd>FormatFile<cr>", { desc = "[T]oggle [F]ormat" })
+vim.keymap.set("n", "<leader>tu", function()
 	vim.cmd.BuildBlink()
 	vim.cmd.MasonToolsUpdate()
 	vim.pack.update()
-end, { desc = "[P]ackage [U]pdate" })
+end, { desc = "[T]oggle [U]pdate" })

@@ -11,3 +11,13 @@ vim.api.nvim_create_autocmd("FileType", {
         pcall(vim.treesitter.start, args.buf)
     end,
 })
+
+vim.api.nvim_create_autocmd("VimEnter", {
+    callback = function()
+        local path = vim.fn.argv(0)
+
+        if path ~= "" and vim.fn.isdirectory(path) == 1 then
+            require("oil").open(path)
+        end
+    end,
+})

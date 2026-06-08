@@ -15,6 +15,4 @@ require("nvim-surround").setup({})
 require("gitsigns").setup({})
 require("monokai-pro").setup()
 
-vim.schedule(function()
-    vim.cmd.colorscheme("monokai-pro-machine")
-end)
+vim.cmd.colorscheme("monokai-pro-machine")

@@ -8,7 +8,6 @@ vim.keymap.set("n", "<leader>sa", "<cmd>Telescope aerial<cr>", { desc = "[S]earc
 
 -- Toggle
 vim.keymap.set("n", "<leader>ta", "<cmd>AerialToggle<cr>", { desc = "[T]oggle [A]erial" })
-vim.keymap.set("n", "<leader>tt", "<cmd>ToggleTreesitter<cr>", { desc = "[T]oggle [T]reeSitter" })
 vim.keymap.set("n", "<leader>tx", "<CMD>Oil<CR>", { desc = "[T]oggle File E[X]plorer" })
 
 -- Format
@@ -28,4 +27,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()
 		vim.hl.on_yank()
 	end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+    callback = function(args)
+        pcall(vim.treesitter.start, args.buf)
+    end,
 })

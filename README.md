@@ -8,6 +8,7 @@
   - '/' : search
   - 'n' : next result
   - 'N' : previous result
+  - 'K' : show doc
 
 ## Keymaps
   - space : leader key

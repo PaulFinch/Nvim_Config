@@ -7,23 +7,30 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-    callback = function(args)
-        pcall(vim.treesitter.start, args.buf)
-    end,
+	callback = function(args)
+		pcall(vim.treesitter.start, args.buf)
+	end,
 })
 
 vim.api.nvim_create_autocmd("VimEnter", {
-    callback = function()
-        local path = vim.fn.argv(0)
+	callback = function()
+		local path = vim.fn.argv(0)
 
-        if path ~= "" and vim.fn.isdirectory(path) == 1 then
-            require("oil").open(path)
-        end
-    end,
+		if path ~= "" and vim.fn.isdirectory(path) == 1 then
+			require("oil").open(path)
+		end
+	end,
 })
 
 vim.api.nvim_create_autocmd("FileChangedShellPost", {
-    callback = function()
-        vim.notify("File reloaded from disk")
-    end,
+	callback = function()
+		vim.notify("File reloaded from disk")
+	end,
 })
+
+vim.api.nvim_create_autocmd({ "BufEnter", "WinEnter" }, {
+	callback = function()
+		vim.fn.matchadd("ErrorMsg", [[\s\+$]])
+	end,
+})
+

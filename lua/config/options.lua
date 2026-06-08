@@ -1,5 +1,5 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = vim.keycode('<Space>')
+vim.g.maplocalleader = vim.keycode('<Space>')
 vim.loader.enable()
 
 vim.o.tabstop = 4

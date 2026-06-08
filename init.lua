@@ -3,8 +3,6 @@ require("config.keymaps")
 require("config.autocmds")
 
 require("plugins.core")
-require("plugins.noice")
-require("plugins.statusline")
 require("plugins.which-key")
 require("plugins.blink")
 require("plugins.telescope")

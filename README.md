@@ -4,6 +4,7 @@
   - 'v' : select
   - 'p' : paste
   - 'y' : copy
+  - 'd' : delete
   - 'o' : new line
   - '/' : search
   - 'n' : next result

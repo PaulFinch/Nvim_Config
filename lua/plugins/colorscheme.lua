@@ -4,10 +4,8 @@ vim.pack.add({
     confirm = false,
 })
 
-require("monokai-pro").setup({
-    filter = "machine",
-})
+require("monokai-pro").setup()
 
 vim.schedule(function()
-    vim.cmd.colorscheme("monokai-pro")
+    vim.cmd.colorscheme("monokai-pro-machine")
 end)

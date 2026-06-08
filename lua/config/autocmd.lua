@@ -27,10 +27,3 @@ vim.api.nvim_create_autocmd("FileChangedShellPost", {
 		vim.notify("File reloaded from disk")
 	end,
 })
-
-vim.api.nvim_create_autocmd({ "BufEnter", "WinEnter" }, {
-	callback = function()
-		vim.fn.matchadd("ErrorMsg", [[\s\+$]])
-	end,
-})
-

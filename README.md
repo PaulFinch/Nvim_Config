@@ -3,9 +3,9 @@
 ## Cheatsheet
   - 'v' : select
   - 'p' : paste
-  - 'y' : yank
+  - 'y' : copy
+  - 'o' : new line
   - '/' : search
-  - 'o' : open line
   - 'n' : next result
   - 'N' : previous result
 

@@ -1,5 +1,14 @@
 # Just Another Neovim Config
 
+## Cheatsheet
+  - 'v' : select
+  - 'p' : paste
+  - 'y' : yank
+  - '/' : search
+  - 'o' : open line
+  - 'n' : next result
+  - 'N' : previous result
+
 ## Keymaps
   - space : leader key
   - leader + tx : toggle file explorer

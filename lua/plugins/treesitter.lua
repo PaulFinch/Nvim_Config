@@ -38,13 +38,3 @@ if #missing > 0 then
 end
 
 treesitter.setup({})
-
-vim.api.nvim_create_user_command("ToggleTreesitter", function()
-    local bufnr = vim.api.nvim_get_current_buf()
-
-    if vim.treesitter.highlighter.active[bufnr] then
-        vim.treesitter.stop(bufnr)
-    else
-        pcall(vim.treesitter.start, bufnr)
-    end
-end, {})

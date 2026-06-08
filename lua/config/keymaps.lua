@@ -1,3 +1,5 @@
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "File Explorer" })
+
 -- Search
 vim.keymap.set("n", "<leader>sc", "<cmd>Telescope commands<cr>", { desc = "[S]earch [C]ommands" })
 vim.keymap.set("n", "<leader>sk", "<cmd>Telescope keymaps<cr>", { desc = "[S]earch [K]eymaps" })
@@ -8,7 +10,6 @@ vim.keymap.set("n", "<leader>sa", "<cmd>Telescope aerial<cr>", { desc = "[S]earc
 
 -- Toggle
 vim.keymap.set("n", "<leader>ta", "<cmd>AerialToggle<cr>", { desc = "[T]oggle [A]erial" })
-vim.keymap.set("n", "<leader>tx", "<CMD>Oil<CR>", { desc = "[T]oggle E[X]plorer" })
 vim.keymap.set("n", "<leader>tf", "<cmd>FormatFile<cr>", { desc = "[T]oggle [F]ormat" })
 vim.keymap.set("n", "<leader>tu", function()
 	vim.cmd.BuildBlink()

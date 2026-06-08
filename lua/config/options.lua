@@ -38,6 +38,7 @@ vim.o.hlsearch = false
 vim.o.incsearch = true
 vim.o.termguicolors = true
 vim.o.autoread = true
+vim.o.winborder = 'rounded'
 --vim.o.cmdheight = 0
 
 vim.g.netrw_banner = 0

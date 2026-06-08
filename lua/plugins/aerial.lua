@@ -15,7 +15,3 @@ require("aerial").setup({
     show_guides = true,
     filter_kind = false,
 })
-
-pcall(function()
-    require("telescope").load_extension("aerial")
-end)

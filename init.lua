@@ -1,9 +1,8 @@
 require("config.options")
 require("config.keymaps")
-require("config.autocmd")
+require("config.autocmds")
 
 require("plugins.core")
-require("plugins.colorscheme")
 require("plugins.noice")
 require("plugins.statusline")
 require("plugins.which-key")

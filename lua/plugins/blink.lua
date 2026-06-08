@@ -31,7 +31,7 @@ blink.setup({
     },
     cmdline = {
         sources = {
-            default = { "buffer", "cmdline" },
+            default = { "buffer" },
         },
     },
 })

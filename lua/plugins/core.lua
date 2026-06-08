@@ -24,6 +24,7 @@ require('mini.ai').setup()
 require('mini.trailspace').setup()
 require('mini.comment').setup()
 require('mini.git').setup()
+require('mini.diff').setup()
 
 local statusline = require("mini.statusline")
 statusline.setup({

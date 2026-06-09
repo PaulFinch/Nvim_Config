@@ -24,7 +24,6 @@ require('mini.pairs').setup()
 require('mini.ai').setup()
 require('mini.trailspace').setup()
 require('mini.comment').setup()
-require('mini.pick').setup()
 require('mini.git').setup()
 require('mini.diff').setup()
 

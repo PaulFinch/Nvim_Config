@@ -20,6 +20,7 @@ require('mini.extra').setup()
 require('mini.fuzzy').setup()
 require('mini.diff').setup()
 require('mini.git').setup()
+require('mini.tabline').setup()
 
 local statusline = require("mini.statusline")
 statusline.setup()

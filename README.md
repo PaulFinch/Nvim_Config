@@ -1,4 +1,4 @@
-# Just Another Neovim Config
+# Just Another Minimalist Neovim Config
 
 ## Cheatsheet
   - 'v' : select
@@ -14,7 +14,6 @@
 ## Keymaps
   - space : leader key
   - '-' : file explorer
-  - leader + ta : toggle aerial
   - leader + tu : toggle package update
   - leader + tf : toggle format file
 
@@ -22,5 +21,4 @@
   - leader + sk : search keymap
   - leader + sf : search files
   - leader + sg : search grep 
-  - leader + sp : search project
-  - leader + sa : search aerial
+  - leader + sp : search projects

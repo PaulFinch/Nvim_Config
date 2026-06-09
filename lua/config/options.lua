@@ -12,7 +12,7 @@ vim.o.autoindent = true
 vim.o.breakindent = true
 vim.o.number = true
 vim.o.relativenumber = false
-vim.o.signcolumn = "yes"
+vim.o.signcolumn = "no"
 vim.o.mouse = "a"
 vim.o.showmode = false
 vim.o.termguicolors = true
@@ -36,7 +36,7 @@ vim.o.hlsearch = false
 vim.o.incsearch = true
 vim.o.autoread = true
 vim.o.winborder = 'rounded'
---vim.o.cmdheight = 0
+vim.o.cmdheight = 1
 
 vim.g.netrw_banner = 0
 vim.g.have_nerd_font = true

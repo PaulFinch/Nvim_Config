@@ -12,15 +12,7 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
-vim.api.nvim_create_autocmd("VimEnter", {
-	callback = function()
-		local path = vim.fn.argv(0)
 
-		if path ~= "" and vim.fn.isdirectory(path) == 1 then
-			require("oil").open(path)
-		end
-	end,
-})
 
 vim.api.nvim_create_autocmd("FileChangedShellPost", {
 	callback = function()

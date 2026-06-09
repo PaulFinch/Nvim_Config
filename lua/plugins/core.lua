@@ -23,15 +23,9 @@ require('mini.surround').setup()
 require('mini.pairs').setup()
 require('mini.ai').setup()
 require('mini.trailspace').setup()
-require('mini.comment').setup()
-require('mini.git').setup()
-require('mini.diff').setup()
 
 local statusline = require("mini.statusline")
-statusline.setup({
-    use_icons = true,
-})
-
+statusline.setup()
 statusline.section_location = function()
     return "%2l:%-2v"
 end

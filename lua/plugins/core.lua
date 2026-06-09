@@ -12,7 +12,7 @@ vim.pack.add({
 require("monokai-pro").setup()
 vim.cmd.colorscheme("monokai-pro-machine")
 
-require("gitsigns").setup({})
+--require("gitsigns").setup({})
 
 require('mini.basics').setup()
 require('mini.icons').setup()
@@ -22,6 +22,7 @@ require('mini.surround').setup()
 require('mini.pairs').setup()
 require('mini.ai').setup()
 require('mini.trailspace').setup()
+require('mini.diff').setup()
 
 local statusline = require("mini.statusline")
 statusline.setup()

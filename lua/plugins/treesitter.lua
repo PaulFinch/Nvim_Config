@@ -4,8 +4,6 @@ vim.pack.add({
 	confirm = false,
 })
 
-local treesitter = require("nvim-treesitter")
-
 local parsers = {
 	"bash",
 	"c",
@@ -24,17 +22,8 @@ local parsers = {
 	"yaml",
 }
 
-local installed = {}
-for _, parser in ipairs(treesitter.get_installed("parsers")) do
-	installed[parser] = true
-end
-
-local missing = vim.tbl_filter(function(parser)
-	return not installed[parser]
-end, parsers)
-
-if #missing > 0 then
-	treesitter.install(missing)
-end
-
-treesitter.setup({})
+require("nvim-treesitter").setup({
+	ensure_installed = parsers,
+	auto_install = true,
+	highlight = { enable = true },
+})
